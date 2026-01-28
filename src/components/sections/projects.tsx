@@ -88,8 +88,9 @@ const ProjectContents = ({ project }: { project: Project }) => {
       <div className="flex flex-col md:flex-row md:justify-evenly max-w-screen overflow-hidden md:overflow-visible">
         <div className="flex flex-row md:flex-col-reverse justify-center items-center gap-2 text-3xl mb-8">
           <p className="text-sm mt-1 text-neutral-600 dark:text-neutral-500">
-            Frontend
-          </p>
+  Frontend
+</p>
+
           {project.skills.frontend?.length > 0 && (
             <FloatingDock items={project.skills.frontend} />
           )}
@@ -136,4 +137,4 @@ const ProjectContents = ({ project }: { project: Project }) => {
     </>
   );
 };
-export default ProjectsSection;
+
