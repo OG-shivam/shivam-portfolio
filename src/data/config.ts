@@ -41,7 +41,7 @@ const config = {
   linkedin: "https://www.linkedin.com/in/shivam-kumar-singh-80989a325",
   instagram: "https://www.instagram.com/something.shivam",
   github: "https://github.com/OG-shivam",
+  twitter: "https://twitter.com/", // required by Hero section
 },
-
 };
 export { config };
