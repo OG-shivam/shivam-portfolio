@@ -1,9 +1,23 @@
+import ContactSection from "@/components/sections/contact";
+import HeroSection from "@/components/sections/hero";
+import SkillsSection from "@/components/sections/skills";
+import ExperienceSection from "@/components/sections/experience";
+import ProjectsSection from "@/components/sections/projects";
+import SmoothScroll from "@/components/smooth-scroll";
+import AnimatedBackground from "@/components/animated-background";
+
 export default function MainPage() {
   return (
-    <div style={{ color: "white", padding: "40px" }}>
-      <h1>Page is rendering</h1>
-      <p>If you see this, the issue is component imports.</p>
-    </div>
+    <SmoothScroll>
+      <AnimatedBackground />
+      <main className="canvas-overlay-mode">
+        <HeroSection />
+        <SkillsSection />
+        <ExperienceSection />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
+    </SmoothScroll>
   );
 }
 
