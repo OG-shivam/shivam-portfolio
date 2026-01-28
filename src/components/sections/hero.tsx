@@ -22,6 +22,7 @@ const HeroSection = () => {
   return (
     <SectionWrapper id="hero" className="relative w-full h-screen">
       <div className="grid md:grid-cols-2">
+        {/* LEFT */}
         <div
           className={cn(
             "h-[calc(100dvh-3rem)] md:h-[calc(100dvh-4rem)] z-[2]",
@@ -32,14 +33,14 @@ const HeroSection = () => {
           {!isLoading && (
             <div className="flex flex-col gap-6">
               {/* Intro */}
-              <BlurIn delay={0.7}>
+              <BlurIn delay={0.6}>
                 <p className="text-slate-500 dark:text-zinc-400 text-lg">
                   Hi, I am
                 </p>
               </BlurIn>
 
               {/* Name */}
-              <BlurIn delay={1}>
+              <BlurIn delay={0.9}>
                 <Tooltip delayDuration={300}>
                   <TooltipTrigger asChild>
                     <h1 className="text-7xl md:text-8xl xl:text-9xl font-thin text-slate-200 leading-none">
@@ -59,7 +60,7 @@ const HeroSection = () => {
                 </p>
               </BlurIn>
 
-              {/* CTA + Socials */}
+              {/* Buttons */}
               <div className="flex items-center gap-3 mt-4">
                 <Link href="#contact">
                   <Button variant="outline">Hire Me</Button>
@@ -87,7 +88,7 @@ const HeroSection = () => {
           )}
         </div>
 
-        {/* Right side (3D / visuals handled elsewhere) */}
+        {/* RIGHT (intentionally empty – 3D handled elsewhere) */}
         <div className="hidden md:block" />
       </div>
 
@@ -99,4 +100,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
