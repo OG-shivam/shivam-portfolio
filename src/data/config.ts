@@ -1,7 +1,8 @@
 const config = {
-  title: "Shivam Kumar Singh | Full-Stack Developer",
+  site: "https://shivam-portfolio.vercel.app",
+  title: "Shivam Kumar | Full-Stack Developer",
   description: {
-    long: "Explore the portfolio of Shivam, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+       long: "Explore the portfolio of Shivam, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
     short:
       "Discover the portfolio of Shivam, a full-stack developer creating interactive web experiences and innovative projects.",
   },
