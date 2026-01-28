@@ -5,11 +5,14 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge";
 import { CalendarDays, User } from "lucide-react";
 import RevealAnimation from "@/components/reveal-animations";
+import { config } from "@/data/config";
 
 export const metadata = {
+  metadataBase: new URL(config.site),
   title: "Blog | Portfolio",
   description: "Thoughts, tutorials, and updates from the space.",
 };
+
 
 export default function BlogPage() {
   const posts = getBlogPosts().sort((a, b) => {

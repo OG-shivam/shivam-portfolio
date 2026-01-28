@@ -1,28 +1,9 @@
-"use client";
-
-import React from "react";
-import SmoothScroll from "@/components/smooth-scroll";
-import { cn } from "@/lib/utils";
-import AnimatedBackground from "@/components/animated-background";
-import SkillsSection from "@/components/sections/skills";
-import ExperienceSection from "@/components/sections/experience";
-import ProjectsSection from "@/components/sections/projects";
-import ContactSection from "@/components/sections/contact";
-import HeroSection from "@/components/sections/hero";
-
-function MainPage() {
+export default function MainPage() {
   return (
-    <SmoothScroll>
-      <AnimatedBackground />
-      <main className={cn("bg-slate-100 dark:bg-transparent canvas-overlay-mode")}>
-        <HeroSection />
-        <SkillsSection />
-        <ExperienceSection />
-        <ProjectsSection />
-        <ContactSection />
-      </main>
-    </SmoothScroll>
+    <div style={{ color: "white", padding: "40px" }}>
+      <h1>Page is rendering</h1>
+      <p>If you see this, the issue is component imports.</p>
+    </div>
   );
 }
 
-export default MainPage;

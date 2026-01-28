@@ -1,3 +1,4 @@
+import { config } from "@/data/config";
 import React from "react";
 import { getBlogPost, getBlogPosts } from "@/lib/mdx";
 import { MDXRemote } from "next-mdx-remote/rsc";
@@ -17,9 +18,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const post = getBlogPost(params.slug);
   return {
-    title: `${post.metadata.title} | Portfolio`,
-    description: post.metadata.summary,
-  };
+  metadataBase: new URL(config.site),
+  title: `${post.metadata.title} | Portfolio`,
+  description: post.metadata.summary,
+};
 }
 
 const components = {

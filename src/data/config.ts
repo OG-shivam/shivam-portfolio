@@ -1,12 +1,12 @@
 const config = {
-  title: "Naresh Khatri | Full-Stack Developer",
+  title: "Shivam Kumar Singh | Full-Stack Developer",
   description: {
-    long: "Explore the portfolio of Naresh, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+    long: "Explore the portfolio of Shivam, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
     short:
-      "Discover the portfolio of Naresh, a full-stack developer creating interactive web experiences and innovative projects.",
+      "Discover the portfolio of Shivam, a full-stack developer creating interactive web experiences and innovative projects.",
   },
   keywords: [
-    "Naresh",
+    "Shivam",
     "portfolio",
     "full-stack developer",
     "creative technologist",
@@ -20,26 +20,27 @@ const config = {
     "GSAP",
     "React",
     "Next.js",
-    "Spline",
     "Framer Motion",
   ],
-  author: "Naresh Khatri",
-  email: "naresh.khatri2345@gmail.com",
-  site: "https://nareshkhatri.site",
+  author: "Shivam",
+  email: "shivamkrsingh112@gmail.com",
+  insta: "something.shivam",
 
   // for github stars button
-  githubUsername: "naresh-khatri",
-  githubRepo: "3d-portfolio",
+  githubUsername: "OG-shivam",
+  githubRepo: "shivam-portfolio",
+ 
+    get ogImg() {
+  return `${this.site}/assets/seo/og-image.png`;
+},
 
-  get ogImg() {
-    return this.site + "/assets/seo/og-image.png";
-  },
+
+  
   social: {
-    twitter: "https://x.com/nothotchaddi",
-    linkedin: "https://www.linkedin.com/in/naresh-khatri/",
-    instagram: "https://www.instagram.com/hotchaddi",
-    facebook: "https://www.facebook.com/HotChaddi/",
-    github: "https://github.com/Naresh-Khatri",
-  },
+  linkedin: "https://www.linkedin.com/in/shivam-kumar-singh-80989a325",
+  instagram: "https://www.instagram.com/something.shivam",
+  github: "https://github.com/OG-shivam",
+},
+
 };
 export { config };

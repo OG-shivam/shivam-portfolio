@@ -15,25 +15,19 @@ export const metadata: Metadata = {
   keywords: config.keywords,
   authors: [{ name: config.author }],
   openGraph: {
-    title: config.title,
-    description: config.description.short,
-    url: config.site,
-    images: [
-      {
-        url: config.ogImg,
-        width: 800,
-        height: 600,
-        alt: "Portfolio preview",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: config.title,
-    description: config.description.short,
-    images: [config.ogImg],
-  },
+  title: config.title,
+  description: config.description.short,
+  url: config.site,
+  images: ["/assets/seo/og-image.png"],
+  type: "website",
+},
+twitter: {
+  card: "summary_large_image",
+  title: config.title,
+  description: config.description.short,
+  images: ["/assets/seo/og-image.png"],
+},
+
   robots: {
     index: true,
     follow: true,
