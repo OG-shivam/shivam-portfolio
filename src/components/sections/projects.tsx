@@ -136,3 +136,4 @@ const ProjectContents = ({ project }: { project: Project }) => {
     </>
   );
 };
+export default ProjectsSection;
